@@ -3,3 +3,12 @@
     margin: 0;  
     background-color: rgb(195, 143, 220);  
 }
+
+.header{
+    min-height: 3vh;
+    display: flex;
+    width: 100%;
+    border-color: antiquewhite;
+    height: 50%;
+    
+}
