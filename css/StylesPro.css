@@ -1,14 +1,84 @@
 *{
     padding: 0;
-    margin: 0;  
-    background-color: rgb(195, 143, 220);  
+    margin: 0;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
-.header{
-    min-height: 3vh;
+header{
+    height: 500px;
+    background:blueviolet;
+    padding: 0 100px;
+    color: rgb(221, 236, 6);
     display: flex;
-    width: 100%;
-    border-color: antiquewhite;
-    height: 50%;
+    justify-content: space-between;
+    align-items: center;
     
+}
+.logo{
+    text-transform: uppercase;
+    color: rgb(214, 56, 204);
+    font-weight: 200;
+}
+.menu a{
+    color: rgb(244, 247, 250);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+}
+#check{
+    display: none;
+}
+.check{
+    display: none;
+}
+.mostrar-menu,
+.esconder-menu{
+    font-size: 50px;
+    cursor: pointer;
+ display:none; 
+    transition: 0.4s;
+}
+.mostrar-menu{
+    order:1;   
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color: rgb(91, 202, 84);
+    
+}
+
+/* responsive*/
+@media(max-width: 768px){
+    /* el header*/
+    .mostrar-menu,
+    .esconder-menu{
+        display: block;
+        
+    }
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(226, 43, 110);
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+    .menu a{
+        display: block;
+        padding: 60px;
+    }
+    .esconder-menu{
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    #check:checked ~ .menu{
+            right: 0;
+    }
 }
