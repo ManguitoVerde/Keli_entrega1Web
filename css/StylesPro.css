@@ -9,7 +9,7 @@ header{
     height: 90px;
     background:rgb(182, 140, 222);
     padding: 0 100px;
-    color: rgb(224, 82, 236);
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +49,7 @@ header{
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover{
-    color: rgb(230, 148, 230);
+    color: rgb(6, 6, 6);
     
 }
 
@@ -110,13 +110,13 @@ header{
 .biografia h1{
     font-size: 50px;
     line-height: 30px;
-    color: azure;
+    color: rgb(6, 7, 7);
     margin-bottom: 30px;
 }
 p{
     text-align: justify;
     font-size: 35px;
-    color: rgb(0, 0, 0);
+    color: rgb(105, 97, 97);
     margin-bottom: 10px;
     line-height: 1.1;
     
@@ -168,7 +168,7 @@ p{
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: url('../img/fondo2.jpg'); /* Añade esta línea */
+    background-image: url('../img/fofo.jpeg'); /* Añade esta línea */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
     background-position: center; /* Centra la imagen */
     border-radius: 50px;
@@ -180,33 +180,33 @@ p{
     width: 200px;
     height: 200px;
     border-radius: 400px;
-    box-shadow: 0 10px 2px rgb(6, 6, 6);
+    box-shadow: 0 10px 2px rgb(211, 52, 198);
 } 
 #familia div{
     padding: 50px 50px;
 }
 #familia div h4{
-    color: bisque;
+    color: rgb(5, 5, 4);
     font-size: 10px;
     margin: 15px 0px;
 }
 #familia div p{
-    color: black;
+    color: rgb(233, 218, 218);
     font-size: 15px;
 }
 .boton{
     display: inline-block;
     text-decoration: none;
     padding: 10px 30px;
-    border: solid #fdcae1;
+    border: solid #070707;
     border-radius: 30px;
     margin-top: 15px;
     transition: all #e0126f;
 }
 
 .boton:hover{
-    background: #c9d30f;
-    color: aqua;
+    background: #be8ed6;
+    color: rgb(2, 2, 2);
 }
  /* Responsive para familia*/
  @media (max-width: 768px) {
@@ -247,7 +247,7 @@ p{
     height: 100px; /* Ajusta la altura según lo necesario */
 }
 .titulo h1 {
-    font-family: 'Poppins', sans-serif; /* Fuente moderna y elegante */
+    font-family: 'Poppins', sans-serif;
     font-size: 3em; /* Tamaño de fuente grande */
     text-transform: uppercase; /* Texto en mayúsculas */
     margin: 0; /* Quita el margen por defecto */
@@ -278,7 +278,7 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(190, 66, 215);
+    background: rgb(217, 176, 225);
     opacity: 0;
     transition: .5s;
 }
@@ -290,4 +290,121 @@ p{
 .mascotas:hover .content{
     opacity: 1;
 }
+
+
+h2{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 2rem;
+    color: #bd6fd5; /* Un color púrpura suave */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.891); /* Sombra sutil para resaltar */
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+}
+.slider-frame{
+    width: 900px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite alternate ease-in-out;
+   
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+    
+}
+.slider-frame img{
+    width: 100%;
+}
+@keyframes slide{
+    0%{margin-left: 0%;}
+    20%{margin-left: 0%;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+}
+
+body {
+  background: #D6B588 ;
+  padding: 50px 0;
+}
+.nav {
+    font-family: 'Titillium Web';
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .nav * {
+    box-sizing: border-box;
+    transition: all .35s ease;
+  }
+  
+  .nav li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
+  }
+  
+  .nav a {
+    padding: .5em .8em;
+    color: rgb(0, 0, 0);
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .nav a::before,
+  .nav a::after {
+    content: '';
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    transition: all .35s ease;
+    opacity: 0;
+  }
+  
+  .nav a::before {
+    content: '';
+    right: 0;
+    top: 0;
+    border-top: 3px solid #e737e7;
+    border-right: 3px solid #e737e7;
+    transform: translate(-100%, 50%);
+  }
+  
+  .nav a:after {
+    content: '';
+    left: 0;
+    bottom: 0;
+    border-bottom: 3px solid #e737e7;
+    border-left: 3px solid #e737e7;
+    transform: translate(100%, -50%)
+  }
+  
+  .nav a:hover:before,
+  .nav a:hover:after{
+    transform: translate(0,0);
+    opacity: 1;
+  }
+  
+  .nav a:hover {
+    color: #040404;
+  }
+
+
 
