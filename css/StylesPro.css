@@ -476,6 +476,40 @@ body {
     text-align: justify;
 }
 
+.playlist-container {
+    background-color: rgb(238, 172, 232);
+    padding: 70px;
+    text-align: center;
+    width: 100%; /* Para que ocupe el 100% del ancho disponible hasta el máximo de 900px */
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #000000;
+}
+
+.playlist {
+    list-style-type: none;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.song-item {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #bba251;
+    border-radius: 50px;
+    width: 20%; /* Ajusta el ancho para tener dos columnas */
+    box-sizing: border-box;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
 .footer{
     padding: 90px 0;
     background-color: #be8ed6;
@@ -495,7 +529,7 @@ body {
 }
 .link a{
 font-size: 16px;
-color: aliceblue;
+color: rgb(6, 6, 6);
 display: block;
 margin-bottom: 15px;
 text-decoration: none;
