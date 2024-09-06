@@ -93,30 +93,26 @@ header{
     align-items: center;
     justify-content:space-between;
     gap: 100px;
-    padding: 80px;
+    padding: 85px;
     background-color: rgb(232, 218, 239);
     height: 370px;
     margin: 0 50px 10px;
     border-radius: 50px;
+    
 }
 .biografia{ 
-    width: 50%;
+    width: 70%;
     padding-right: 100px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     align-items: center;
     text-align: center;
     
 }
-.biografia h1{
-    font-size: 50px;
-    line-height: 30px;
-    color: rgb(6, 7, 7);
-    margin-bottom: 30px;
-}
+
 p{
     text-align: justify;
     font-size: 35px;
-    color: rgb(105, 97, 97);
+    color: rgb(0, 0, 0);
     margin-bottom: 10px;
     line-height: 1.1;
     
@@ -137,12 +133,12 @@ p{
     content: url('../img/img.jpg'); /* Cambia a la segunda imagen */
   }
  /* Responsive pantalla mas pequeña */
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         align-items: center;
         height: auto;
-        padding: 40px;
+        padding: 70px;
         gap: 50px;
     }
     .biografia {
@@ -151,7 +147,7 @@ p{
     }
     .biografia h1 {
         font-size: 40px;
-        line-height: 28px
+        line-height: 40px
     }
     p {
         font-size: 25px;
@@ -164,11 +160,11 @@ p{
     }
 }
 #familia{
-    padding: 60px 60px;
+    padding: 50px 40px;
     display: flex;
     justify-content: center;
     text-align: center;
-    background-image: url('../img/fofo.jpeg'); /* Añade esta línea */
+    background-image: url('../img/fon.jpg'); /* Añade esta línea */
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el contenedor */
     background-position: center; /* Centra la imagen */
     border-radius: 50px;
@@ -177,21 +173,21 @@ p{
 
 }
  #familia img{
-    width: 200px;
-    height: 200px;
+    width: 220px;
+    height: 220px;
     border-radius: 400px;
-    box-shadow: 0 10px 2px rgb(211, 52, 198);
+    box-shadow: 0 10px 2px #D6B588 ;
 } 
 #familia div{
-    padding: 50px 50px;
+    padding: 20px 20px;
 }
 #familia div h4{
-    color: rgb(5, 5, 4);
-    font-size: 10px;
+    color: rgb(232, 118, 228);
+    font-size: 25px;
     margin: 15px 0px;
 }
 #familia div p{
-    color: rgb(233, 218, 218);
+    color: rgb(11, 10, 10);
     font-size: 15px;
 }
 .boton{
@@ -201,7 +197,8 @@ p{
     border: solid #070707;
     border-radius: 30px;
     margin-top: 15px;
-    transition: all #e0126f;
+    transition: all #060606;
+    color: black;
 }
 
 .boton:hover{
@@ -246,12 +243,12 @@ p{
     align-items: center;
     height: 100px; /* Ajusta la altura según lo necesario */
 }
-.titulo h1 {
+ h1 {
     font-family: 'Poppins', sans-serif;
-    font-size: 3em; /* Tamaño de fuente grande */
+    font-size: 2em; /* Tamaño de fuente grande */
     text-transform: uppercase; /* Texto en mayúsculas */
     margin: 0; /* Quita el margen por defecto */
-    background: linear-gradient(90deg, #9c32dd, #e9edee); /* Degradado de color en el texto */
+    background: linear-gradient(90deg, #9c32dd, #010304); /* Degradado de color en el texto */
     -webkit-background-clip: text; /* Recorta el fondo al texto */
     -webkit-text-fill-color: transparent; /* Rellena el texto con transparencia para mostrar el degradado */
     text-align: center; /* Centra el texto */
@@ -294,17 +291,17 @@ p{
 
 h2{
     text-align: center;
-    margin-top: 5px;
-    font-size: 2rem;
-    color: #bd6fd5; /* Un color púrpura suave */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.891); /* Sombra sutil para resaltar */
+    margin-top: 0;
+    font-size:3rem;
+    color: #060606;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.9px;
+    margin-bottom: 25px;
 }
 .slider-frame{
-    width: 900px;
+    width: 800px;
     height: auto;
-    margin: 50px auto 0;
+    margin: 10px auto 0;
     overflow: hidden;
     
 }
@@ -322,6 +319,8 @@ h2{
 }
 .slider-frame img{
     width: 100%;
+    border-radius: 50px;
+    
 }
 @keyframes slide{
     0%{margin-left: 0%;}
@@ -337,9 +336,29 @@ h2{
     95%{margin-left: -300%;}
 }
 
+/* Media queries para hacer el slider responsive */
+@media (max-width: 768px) {
+    .slider-frame {
+        width: 90%;
+    }
+
+    .slider-frame ul {
+        width: 400%;
+    }
+
+    .slider-frame li {
+        width: 100%;
+    }
+
+    .slider-frame img {
+        width: 100%;
+        border-radius: 100px; /* Ajusta el border-radius para pantallas pequeñas */
+    }
+}
+
 body {
   background: #D6B588 ;
-  padding: 50px 0;
+  padding: 30px 0 0 0;
 }
 .nav {
     font-family: 'Titillium Web';
@@ -405,6 +424,90 @@ body {
   .nav a:hover {
     color: #040404;
   }
+
+  .content1{
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .soo {
+    padding: 20px;
+    background: #f3f3f0;
+    border-radius: 100px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    transition: transform 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+.soo:hover {
+    transform: translateY(50px); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+  .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+.box-container .box{
+    height: 20rem;
+    width: 23rem;
+    background: #d79ee0;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgb(228, 125, 14);
+    margin: 2rem;
+}
+.box-container .box img{
+ height: 10rem; /*Otra medida que puedo utilizar el rem */
+ width: 10rem;
+ text-align: center;
+ border-radius: 50%;
+ margin:  1rem 0 ;
+}
+.box-container .box h3{
+    font-size: 20px;
+    color: rgb(9, 9, 9);
+}
+.box-container .box p{
+    padding: 20px 90px;
+    font-size: 16px;
+    color: rgb(9, 9, 9);
+    text-align: justify;
+}
+
+.footer{
+    padding: 90px 0;
+    background-color: #be8ed6;
+
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    height: auto;
+
+}
+.link h3{
+    font-size: 18px;
+    color: #060606;
+    margin-bottom: 15px;
+}
+.link a{
+font-size: 16px;
+color: aliceblue;
+display: block;
+margin-bottom: 15px;
+text-decoration: none;
+
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+
 
 
 
